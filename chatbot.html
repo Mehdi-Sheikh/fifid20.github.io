@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Chat Panel</title>
+		<!-- <script src="https://w3schools-prod.boost.ai/chatPanel/chatPanel.js"></script> -->
+		<!-- <script src="https://w3schools.boost.ai/chatPanel/chatPanel.js"></script> -->
+		<script src="https://w3schools-prod.boost.ai/chatPanel/chatPanel.js"></script>
+	</head>
+	<body>
+		<button type="button" onclick="javascript:openChat()">Open Chat</button>
+		
+		
+		<script>
+			var options={
+				chatPanel:{
+				  header:{
+					title:"My chat panel",
+				  },
+				  styling:{
+					pace:"supersonic",
+				  },
+				},
+			};
+			var boost = window.boostInit("w3schools-prod",options);
+			
+			function openChat(){
+				boost.chatPanel.show();
+			}
+		</script>
+	</body>
+</html>
